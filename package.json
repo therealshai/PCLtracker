@@ -1,0 +1,31 @@
+{
+  "name": "pcljaintracker",
+  "version": "1.0.0",
+  "description": "PCLjainTracker Project",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "tsc --project backend",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "ts-node backend/src/server.ts",
+    "client": "cd frontend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^4.0.7",
+    "concurrently": "^5.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.4.5"
+  }
+}
