@@ -7,8 +7,8 @@ const Header: React.FC = () => {
     <div className="bg-background-blue p-6 grid grid-cols-2 gap-4 items-center h-44">
       <div className="flex items-center">
         <div className="flex flex-col justify-center">
-          <h1 className="text-2xl font-bold text-button-blue whitespace-nowrap">STUDENT LOGIN</h1>
-          <p className="text-button-blue text-pretty">PCL Tracker</p>
+          <h1 className="text-2xl font-bold text-blue-900 whitespace-nowrap">STUDENT LOGIN</h1>
+          <p className="text-blue-800 text-pretty">JGI PCL Tracker</p>
         </div>
       </div>
       <div className="flex items-center justify-end">
