@@ -5,7 +5,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="flex">
       <ToggleBar />
-      
+      console.log("this is dash");
     </div>
   );
 };
